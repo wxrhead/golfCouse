@@ -1,0 +1,150 @@
+import {StyleSheet} from 'react-native';
+import {scale, verticalScale} from 'react-native-size-matters';
+import {fontFamily} from '../../constants/fonts';
+import {ScrollView} from 'react-native-gesture-handler';
+
+const styles = StyleSheet.create({
+  headerImg: {width: '100%', height: verticalScale(270)},
+  roundType: {
+    marginTop: verticalScale(15),
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    backgroundColor: '#F5F4F4',
+  },
+  headerButton: {
+    position: 'absolute',
+    top: verticalScale(50),
+    left: scale(15),
+  },
+  locationButton: {
+    position: 'absolute',
+    bottom: 5,
+    right: scale(10),
+    width: verticalScale(40),
+    height: verticalScale(40),
+    backgroundColor: '#277A37',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 30,
+  },
+  scrollView: {padding: scale(15), height: verticalScale(500)},
+  locationBox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  locationDistance: {
+    fontFamily: fontFamily.interRegular,
+    fontSize: verticalScale(13),
+    fontWeight: '400',
+    color: 'black',
+  },
+  ratingBox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: scale(50),
+    padding: scale(4),
+    borderRadius: scale(15),
+    backgroundColor: '#FEC62626',
+  },
+  courseInfo: {
+    fontFamily: fontFamily.interRegular,
+    fontSize: verticalScale(12),
+    fontWeight: '400',
+    color: '#8c9590',
+  },
+  courseData: {
+    fontFamily: fontFamily.interRegular,
+    fontSize: verticalScale(15),
+    fontWeight: '600',
+    color: '#3C453F',
+    marginTop: verticalScale(4),
+  },
+  rating: {
+    fontFamily: fontFamily.interRegular,
+    fontSize: verticalScale(12),
+    fontWeight: '600',
+    color: 'black',
+  },
+  topHeading: {
+    fontSize: verticalScale(20),
+    color: 'white',
+    fontFamily: fontFamily.farroBold,
+    position: 'absolute',
+    fontWeight: '700',
+    width: '60%',
+    bottom: verticalScale(15),
+    left: scale(15),
+  },
+  headerButtonleft: {
+    position: 'absolute',
+    top: verticalScale(50),
+    right: scale(15),
+  },
+  greenButton: {
+    width: scale(90),
+    height: verticalScale(38),
+    borderRadius: scale(26),
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#277A37',
+  },
+  greenButtonText: {
+    alignSelf: 'center',
+    fontFamily: fontFamily.interRegular,
+    fontSize: verticalScale(14),
+    fontWeight: '600',
+    color: 'white',
+  },
+  playWithFriends: {
+    paddingTop: verticalScale(6),
+    justifyContent: 'space-between',
+  },
+  hr: {
+    height: verticalScale(2),
+    backgroundColor: '#F5F4F4',
+    width: '100%',
+    marginTop: verticalScale(10),
+    marginBottom: verticalScale(10),
+  },
+  slider: {
+    paddingLeft: scale(5),
+    paddingRight: scale(16),
+    paddingVertical: verticalScale(8),
+    width: '100%',
+    flexDirection: 'row',
+    backgroundColor: '#277A37',
+    borderRadius: scale(40),
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  ballImg: {
+    width: scale(46),
+    height: scale(46),
+    marginLeft: scale(5),
+    marginRight: scale(5),
+  },
+  commingSoon: {},
+  addPlayer: {
+    alignItems: 'center',
+    marginRight: scale(16),
+  },
+  addIcon: {
+    height: verticalScale(46),
+    width: verticalScale(46),
+    borderRadius: 99,
+    borderColor: '#CDC9C9',
+    borderWidth: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5F4F4',
+  },
+  addText: {
+    fontSize: verticalScale(12),
+    color: 'rgba(1, 1, 1, 0.57)',
+    marginTop: verticalScale(8),
+    fontWeight: '500',
+  },
+});
+
+export default styles;
